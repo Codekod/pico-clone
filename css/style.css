@@ -1,0 +1,27 @@
+:root {
+    --green: #2ecc71;
+    --blue: #3498db;
+    --yellow: #f1c40f;
+    --red: #e73c3c;
+    --dark-blue: #34495e;
+    --midnight-blue: #2c3e50;
+    --light-white: #ecf0f1;
+    --bg-color: var(--light-white);
+    --text-color: var(--blue);
+    --body-color: white;
+
+
+}
+
+:root[data-theme="dark"] {
+    --body--color: --
+    --bg-color: var(--dark-blue);
+    --text-color: var(--green);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
