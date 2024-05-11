@@ -10,6 +10,8 @@
     --bg-color: var(--light-white);
     --text-color: var(--blue);
     --body-color: white;
+    --link-color: var(--blue);
+    --link-color-hover: var(--dark-blue);
 
 
 }
@@ -27,14 +29,66 @@
 }
 
 body {
-    background-color: var(--bg-color);
+    background-color: var(--body-color);
 }
 
+/* HELPER */
+.clear-fix {
+    clear: both;
+}
 
 /* NAV */
 
 header {
-    background-color: var(--light-white);
+    background-color: var(--bg-color);
+    min-height: 20px;
+    padding: 20px 0;
+}
+
+header > nav {
+    width: 800px;
+    margin: 0 auto;
+}
+
+header > nav > ul {
+    float: left;
+    list-style: none;
+}
+
+
+header > nav > ul:last-of-type {
+    float: right;
+}
+
+header > nav > ul > li {
+    float: left;
+    margin-right: 10px;
+}
+header > nav > ul > li > a {
+    text-decoration: none;
+    color: var(--link-color);
+    padding: 8px 12px;
+    border-radius: 6px;
+    opacity: 0.7;
+    transition: 0.8s;
+}
+header > nav > ul > li > a:hover {
+    color: var(--link-color-hover);
+    background-color: var(--silver);
+    opacity: 1;
+}
+
+header > nav > ul > li:last-child > a {
+    background-color: var(--blue);
+    color: var(--bg-color);
+    
+
+}
+header > nav > ul > li:last-child > a:hover {
+    background-color: var(--green);
+    color: var(--dark-blue);
+    
+
 }
 
 
