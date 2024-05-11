@@ -6,6 +6,7 @@
     --dark-blue: #34495e;
     --midnight-blue: #2c3e50;
     --light-white: #ecf0f1;
+    --silver: #bdc3c7;
     --bg-color: var(--light-white);
     --text-color: var(--blue);
     --body-color: white;
@@ -18,10 +19,22 @@
     --bg-color: var(--dark-blue);
     --text-color: var(--green);
 }
-
+/* RESET */
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
+
+body {
+    background-color: var(--bg-color);
+}
+
+
+/* NAV */
+
+header {
+    background-color: var(--light-white);
+}
+
 
