@@ -39,7 +39,7 @@ body {
     clear: both;
 }
 /* GENERAL */
-header, main {
+header, main, footer {
     background-color: var(--bg-color);
 
     min-height: 20px;
@@ -123,13 +123,19 @@ aside > ul > li {
     margin-bottom: 10px;
 }
 aside > ul > li > a {
+    padding: 8px 12px;
+    border-radius: 6px;
+    opacity: 0.7;
+    transition: 0.8s;
     text-decoration: none;
-   color: var(--link-color);
-   padding: 6px 10px;
+   color: var(--blue);
    display: block;
 }
 aside > ul > li > a:hover {
-    color: var(--text-color);
+
+    color: var(--link-color-hover);
+    background-color: var(--silver);
+    opacity: 1;
 }
 
 /* SECTION */
@@ -169,4 +175,36 @@ img {
     background-color: var(--silver);
     border-radius: 4px;
     margin: 10px 0;
+}
+
+footer {
+    width: var(--box-size);
+    margin: 0 auto;
+}
+
+footer > ul {
+    
+    float: left;
+    list-style: none;
+}
+footer > ul:last-of-type {
+    float: right;
+}
+footer > ul > li {
+    float: left;
+    margin-right: 10px;
+}
+
+footer > ul > li > a {
+    text-decoration: none;
+    color: var(--link-color);
+    padding: 4px 6px;
+    border-radius: 6px;
+    opacity: 0.7;
+    transition: 0.8s;
+}
+footer > ul > li > a:hover {
+    color: var(--link-color-hover);
+    background-color: var(--silver);
+    opacity: 1;
 }
