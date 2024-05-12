@@ -180,6 +180,7 @@ img {
 footer {
     width: var(--box-size);
     margin: 0 auto;
+    
 }
 
 footer > ul {
@@ -193,12 +194,13 @@ footer > ul:last-of-type {
 footer > ul > li {
     float: left;
     margin-right: 10px;
+    
 }
 
 footer > ul > li > a {
     text-decoration: none;
     color: var(--link-color);
-    padding: 4px 6px;
+    padding: 3px 5px;
     border-radius: 6px;
     opacity: 0.7;
     transition: 0.8s;
