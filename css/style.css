@@ -49,7 +49,9 @@ header, main {
 
 
 /* NAV */
-
+header {
+    border-bottom: 1px solid var(--silver) ;
+}
 
 header > nav {
     width: var(--box-size);
@@ -99,8 +101,8 @@ header > nav > ul > li:last-child > a:hover {
 
 main {
     width: var(--box-size);
-    margin: 0 auto;
-    min-height: 600px;
+    margin: 0 auto 30px;
+    /* min-height: 800px; */
     border: 1px solid var(--silver);
     border-radius: 4px;
     padding: 20px;
@@ -134,5 +136,37 @@ aside > ul > li > a:hover {
 section {
     width: 70%;
 }
+/* ARTICLE */
 
+article, article > header {
+    background-color: var(--body-color);
+}
 
+article {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+article > header {
+    padding: 0;
+    border-bottom: none;
+}
+article > footer {
+    padding: 10px 0;
+}
+
+article > footer > a {
+    color: var(--link-color);
+}
+article >p {
+    margin-bottom: 10px;
+}
+
+img {
+    width: 100%;
+    padding: 4px;
+    border: 1px solid var(--bg-color);
+    background-color: var(--silver);
+    border-radius: 4px;
+    margin: 10px 0;
+}
