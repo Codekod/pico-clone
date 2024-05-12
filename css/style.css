@@ -7,8 +7,9 @@
     --midnight-blue: #2c3e50;
     --light-white: #ecf0f1;
     --silver: #bdc3c7;
+    --box-size: 900px;
     --bg-color: var(--light-white);
-    --text-color: var(--midnight-blue)
+    --text-color: var(--midnight-blue);
     --body-color: white;
     --link-color: var(--blue);
     --link-color-hover: var(--dark-blue);
@@ -30,23 +31,28 @@
 
 body {
     background-color: var(--body-color);
+    color: var(--text-color);
 }
 
 /* HELPER */
 .clear-fix {
     clear: both;
 }
+/* GENERAL */
+header, main {
+    background-color: var(--bg-color);
+
+    min-height: 20px;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
 
 /* NAV */
 
-header {
-    background-color: var(--bg-color);
-    min-height: 20px;
-    padding: 20px 0;
-}
 
 header > nav {
-    width: 800px;
+    width: var(--box-size);
     margin: 0 auto;
 }
 
@@ -87,8 +93,46 @@ header > nav > ul > li:last-child > a {
 header > nav > ul > li:last-child > a:hover {
     background-color: var(--green);
     color: var(--dark-blue);
-    
+}
 
+/* MAIN */
+
+main {
+    width: var(--box-size);
+    margin: 0 auto;
+    min-height: 600px;
+    border: 1px solid var(--silver);
+    border-radius: 4px;
+    padding: 20px;
+}
+/* ASIDE */
+
+aside, section {
+    float: left;
+}
+aside {
+    width: 30%;
+    padding: 20px;
+}
+aside > ul {
+    list-style: none;
+}
+aside > ul > li {
+    margin-bottom: 10px;
+}
+aside > ul > li > a {
+    text-decoration: none;
+   color: var(--link-color);
+   padding: 6px 10px;
+   display: block;
+}
+aside > ul > li > a:hover {
+    color: var(--text-color);
+}
+
+/* SECTION */
+section {
+    width: 70%;
 }
 
 
